@@ -1,0 +1,308 @@
+
+/* 
+
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Space Mono', monospace;
+
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nunito:wght@200&family=Oswald:wght@200;300&family=Pacifico&family=Source+Sans+Pro:wght@200;400&family=Chakra+Petch:wght@300;400&family=Space+Mono&display=swap');
+
+
+body 
+{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "about"
+    "portfolio"
+    "blog"
+    "contact"
+    "footer";
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+#header, #nav, #about, #portfolio, #blog, #contact, #footer
+{
+    width: 100vw;
+}
+ 
+
+
+/* Main Elements*/
+#nav
+{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    border-bottom: 1px solid  rgb(255, 203, 154);;
+    background-color: rgba(44, 53, 50, 1);
+    width: 100vw;
+ }
+
+ #header
+{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Chakra Petch', sans-serif;
+    background-image: url("../imgs/background.gif");
+    height: 100vh;    
+}
+
+#about
+{
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(44, 53, 50, 1);    
+    height: 1500px;
+}
+
+
+#portfolio
+{
+    grid-area: portfolio;
+    background-color: rgba(210, 233, 227, 1);    
+    height: 100vh;
+}
+
+
+#blog
+{
+    grid-area: blog;
+    background-color: rgba(210, 233, 227, 1);    
+    height: 100vh;
+}
+
+
+#contact
+{
+    grid-area: contact;
+    background-color: rgba(210, 233, 227, 1);    
+    height: 100vh;
+}
+
+#footer
+{
+    grid-area: footer;
+    background-color: rgba(16, 100, 102, 1);    
+    height: 300px;
+}
+
+
+/* Top Nav */
+
+#nav > ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    
+ 
+}
+
+#nav > ul > li 
+{
+    display: block;
+    margin: 10px;
+}
+ 
+#nav ul > li > a 
+ {
+    text-decoration: none;
+    color: rgb(255, 202, 155);
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Chakra Petch', sans-serif;
+    
+    font-size: 18px;
+}
+
+
+/* Header */
+#header > div > h1
+{
+    color: rgb(255, 203, 154);
+    font-size: 50px;
+}
+
+#header > div 
+{
+    background-color: rgba(44, 53, 50, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+#header > h1 > span 
+{
+    color: rgb(210, 233, 227);
+}
+
+#header > div > h2  
+{
+    color: rgb(210, 233, 227);
+    font-size: 40px;
+    margin: 0;
+}
+
+#header > div > h2 > span
+{
+    text-decoration: underline;
+    color: rgb(216, 176, 140);
+}
+
+#header > div > h1 > span
+{
+    text-decoration: underline;
+    color: rgb(255, 84, 84);
+}
+
+#header > div > a 
+{
+    margin-top: 10px;
+    text-decoration: none;
+    border-style: solid;
+    color: rgb(210, 233, 227);
+    font-size: 20px;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ 
+/* About */
+
+#about > div > h1
+{
+    font-family: 'Space Mono', monospace;
+    font-size: 60px;
+    font-weight: 50;
+    margin-top: 120px;
+    margin-bottom: 0;
+    color: rgb(210, 233, 227);
+    text-align: center;
+
+}
+
+
+
+#about > div > h1 > span 
+{
+    color: rgb(255, 203, 152);
+    text-decoration: underline;
+}
+ 
+
+#about > div > h2
+{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+    color: rgb(210, 233, 227);
+}
+
+#about > div 
+{
+    width: 100vw;
+}
+
+#about > div.profile
+{
+    display: grid;
+    grid-template-areas:
+    "profile picture details"
+    "footer footer footer";
+    grid-template-columns:  1fr 400px 1fr ;
+    grid-template-rows:  1fr  1fr;
+    height: 800px;
+    width: 100vw;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(210, 233, 227);
+}
+
+#about > div.profile  h1
+{
+    font-size: 50px;
+}
+
+#about > div.profile  p 
+{
+    font-size: 20px;
+}
+
+
+#about > div.profile > div:nth-child(1)
+{
+    grid-area: profile;
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+
+#about > div.profile > div:nth-child(2)
+{
+    grid-area: profile;
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+#about > div.profile > div:nth-child(2)
+{
+    grid-area: picture;
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+#about > div.profile > div:nth-child(2) > img 
+{
+    margin-top: 50px;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+
+}
+
+#about > div.profile > div:nth-child(3)
+{
+    grid-area: details;
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+#about > div.profile > div:nth-child(4)
+{
+    grid-area: footer;
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+#about > div.profile > div:nth-child(4) > p
+{
+    text-align: center;
+}
+
+
