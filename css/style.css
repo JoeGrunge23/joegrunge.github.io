@@ -279,11 +279,168 @@ body
     display: grid;
     grid-template-areas:
     "school description";
-    background-color: rgba(11, 233, 227, 1);  
+    /* background-color: rgba(35,42, 40, 1); */
+    grid-template-rows:  1fr ;
+    grid-template-columns: 300px  1fr;
     width: 100vw;
+    font-family: 'Space Mono', monospace;
+}
+
+#about > div.education > div 
+{
+    padding: 10px 50px 50px;
 }
 
 
+#about > div.education > div:nth-child(1)
+{
+    grid-area: school;}
+
+
+#about > div.education > div:nth-child(1) > h1
+{
+    color: rgb(210, 233, 227);
+    font-size: 30px;
+
+}
+
+#about > div.education > div:nth-child(1) > p:nth-child(2)
+{
+    color: rgb(255, 203, 155);
+}
+
+#about > div.education > div:nth-child(1) > p:nth-child(3)
+{
+    color: rgb(210, 233, 227);
+}
+
+#about > div.education > div:nth-child(2)
+{
+    grid-area: description;
+}
+
+#about > div.education > div:nth-child(2) > h4
+{
+    color: rgb(255, 203, 155);
+    margin-top:  100px;
+}
+
+#about > div.education > div:nth-child(2) > p
+{
+    color: rgb(210, 233, 227);
+}
+
+
+
+
+
+ 
+#about > div.experience
+{
+    display: grid;
+    grid-template-areas:
+    "work description"
+    "worktwo descriptiontwo";
+    /* background-color: rgba(35,42, 40, 1); */
+    grid-template-rows:  1fr 1fr ;
+    grid-template-columns: 300px  1fr;
+    width: 100vw;
+    font-family: 'Space Mono', monospace;
+}
+
+#about > div.experience > div 
+{
+    padding: 0 50px 50px;
+}
+
+
+#about > div.experience > div:nth-child(1)
+{
+    grid-area: work;
+}
+
+
+#about > div.experience > div:nth-child(1) > h1
+{
+    color: rgb(210, 233, 227);
+    font-size: 30px;
+
+}
+
+#about > div.experience > div:nth-child(1) > p:nth-child(2)
+{
+    color: rgb(255, 203, 155);
+}
+
+#about > div.experience > div:nth-child(1) > p:nth-child(3)
+{
+    color: rgb(210, 233, 227);
+}
+
+#about > div.experience > div:nth-child(2)
+{
+    grid-area: description;
+}
+
+#about > div.experience > div:nth-child(2) > h4
+{
+    color: rgb(255, 203, 155);
+    margin-top:  100px;
+}
+
+#about > div.experience > div:nth-child(2) > p
+{
+    color: rgb(210, 233, 227);
+}
+
+
+
+
+
+
+#about > div.experience > div:nth-child(3)
+{
+    grid-area: worktwo;
+}
+
+
+
+#about > div.experience > div:nth-child(3) > h1
+{
+    color: rgb(210, 233, 227);
+    font-size: 30px;
+
+}
+
+#about > div.experience > div:nth-child(3) > p:nth-child(1)
+{
+    color: rgb(255, 203, 155);
+}
+
+#about > div.experience > div:nth-child(3) > p:nth-child(2)
+{
+    color: rgb(210, 233, 227);
+}
+
+
+
+
+
+
+#about > div.experience > div:nth-child(4)
+{
+    grid-area: descriptiontwo;
+}
+
+#about > div.experience > div:nth-child(4) > h4
+{
+    color: rgb(255, 203, 155);
+}
+
+#about > div.experience > div:nth-child(4) > p
+{
+    color: rgb(210, 233, 227);
+}
 
 
 /*  */
